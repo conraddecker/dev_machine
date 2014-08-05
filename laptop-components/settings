@@ -16,8 +16,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock tilesize -int 48
 killall Dock
 
-#A number of settings that are necessary to do by hand until I figure out the
-correct command line alternative
+#A number of settings that are necessary to do by hand until I figure out the correct command line alternative
 fancy_echo "Be sure to update the following settings manually"
 fancy_echo "TRACKPAD"
 less_fancy_echo "Enable 'Tap-to-click' and '3 finger drag' under POINT & CLICK settings"
