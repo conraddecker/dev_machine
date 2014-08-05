@@ -1,5 +1,4 @@
 fancy_echo "Updating Mac OSX settings..."
-#Worth checking out: http://blog.taylormcgann.com/2012/04/03/mac-os-x-user-defaults/
 
 less_fancy_echo "...setting computer and hostnames..."
 sudo scutil --set ComputerName CDV-Air
@@ -33,14 +32,13 @@ less_fancy_echo "...setting default terminal profile to 'Pro'..."
 defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
 
-#A number of settings that are necessary to do by hand until I figure out the correct command line alternative
-fancy_echo "Be sure to update the following settings manually for ultimate happiness"
-fancy_echo "MOUSE"
-less_fancy_echo "...disable 'Scroll direction: natural' under POINT & CLICK settings"
-less_fancy_echo "...enable 'Secondary click: click on the right side' under POINT & CLICK settings"
-less_fancy_echo "...enable 'SmartZoom Double-tap with one finger' under POINT & CLICK settings"
-less_fancy_echo "...set 'Tracking Speed' to 3 out of 10 under POINT & CLICK settings"
-less_fancy_echo "...enable 'Swipe between pages' under MORE GESTURES settings"
-less_fancy_echo "...enable 'Swipe between full-screen apps' under MORE GESTURES settings"
-less_fancy_echo "...enable 'Mission control: double-tap with two fingers' under MORE GESTURES settings"
-
+#Mouse settings if we want to adjust them as well (we probably should)
+#fancy_echo "Be sure to update the following settings manually for ultimate happiness"
+#fancy_echo "MOUSE"
+#less_fancy_echo "...disable 'Scroll direction: natural' under POINT & CLICK settings"
+#less_fancy_echo "...enable 'Secondary click: click on the right side' under POINT & CLICK settings"
+#less_fancy_echo "...enable 'SmartZoom Double-tap with one finger' under POINT & CLICK settings"
+#less_fancy_echo "...set 'Tracking Speed' to 3 out of 10 under POINT & CLICK settings"
+#less_fancy_echo "...enable 'Swipe between pages' under MORE GESTURES settings"
+#less_fancy_echo "...enable 'Swipe between full-screen apps' under MORE GESTURES settings"
+#less_fancy_echo "...enable 'Mission control: double-tap with two fingers' under MORE GESTURES settings"
