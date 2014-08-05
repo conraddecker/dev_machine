@@ -1,0 +1,36 @@
+#Set computer and hostnames
+sudo scutil --set ComputerName CDV-Air
+sudo scutil --set HostName CDV-Air.local
+
+#Require password immediately after screen saver or sleep
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+#Make keyboard fast. Speed up key repeats and disable press and hold
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+
+#Enable dock autohide and make icons a little smaller than default
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock tilesize -int 48
+killall Dock
+
+#A number of settings that are necessary to do by hand until I figure out the
+correct command line alternative
+fancy_echo "Be sure to update the following settings manually"
+fancy_echo "TRACKPAD"
+less_fancy_echo "Enable 'Tap-to-click' and '3 finger drag' under POINT & CLICK settings"
+less_fancy_echo "Disable 'Scroll direction: natural' under SCROLL & ZOOM settings"
+
+fancy_echo "MOUSE"
+less_fancy_echo "Disable 'Scroll direction: natural' under POINT & CLICK settings"
+less_fancy_echo "Enable 'Secondary click: click on the right side' under POINT & CLICK settings"
+less_fancy_echo "Enable 'SmartZoom Double-tap with one finger' under POINT & CLICK settings"
+less_fancy_echo "Set 'Tracking Speed' to 3 out of 10 under POINT & CLICK settings"
+less_fancy_echo "Enable 'Swipe between pages' under MORE GESTURES settings"
+less_fancy_echo "Enable 'Swipe between full-screen apps' under MORE GESTURES settings"
+less_fancy_echo "Enable 'Mission control: double-tap with two fingers' under MORE GESTURES settings"
+
+fancy_echo "TERMINAL"
+less_fancy_echo "Open Terminal and set the default Profile to 'Pro'. It can be found under Preferences->Settings->Profiles"

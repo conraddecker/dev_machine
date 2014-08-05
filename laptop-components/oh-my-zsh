@@ -1,0 +1,7 @@
+fancy_echo "Installing Oh-My-Zsh..."
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+fancy_echo "Installing local Oh-My-Zsh personalizations..."
+cp -R ~/laptop/oh-my-zsh/cdv_custom ~/.oh-my-zsh
+cp ~/laptop/oh-my-zsh/templates/cdv.zsh-template ~/.zshrc.local
+

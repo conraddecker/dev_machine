@@ -1,0 +1,35 @@
+fancy_echo "Installing Adobe Air..."
+brew_cask_install adobe-air
+
+fancy_echo "Installing Bartender to keep that menu bar clean..."
+brew_cask_install bartender
+
+fancy_echo "Installing Dropbox for some cloud storage..."
+brew_cask_install dropbox
+
+fancy_echo "Installing Firefox for web browsing..."
+brew_cask_install firefox
+
+fancy_echo "Installing F-lux, to save your eyes ..."
+brew_cask_install flux
+
+fancy_echo "Installing Google Chrome for web browsing..."
+brew_cask_install google-chrome
+
+fancy_echo "Installing Hall for communication..."
+brew_cask_install hall
+
+fancy_echo "Installing Menu Meters for at a glance info on processors..."
+brew_cask_install menumeters
+
+fancy_echo "Installing Pandora for music..."
+brew_cask_install pandora-one
+
+fancy_echo "Installing SizeUp for quick window resizing..."
+brew_cask_install sizeup
+
+fancy_echo "Installing SelfControl for...well, self control..."
+brew_cask_install selfcontrol
+
+fancy_echo "Cleaning up Brew Cask packages..."
+brew cask cleanup
