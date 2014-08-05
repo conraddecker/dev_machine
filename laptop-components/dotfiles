@@ -1,7 +1,5 @@
 fancy_echo "Setting up dotfiles..."
 git clone git://github.com/thoughtbot/dotfiles.git .dotfiles
 
-fancy_echo "Set up local customizations for dotfiles"
-cp -R ~/.laptop/dotfiles/ ~/
-
-env RCRC=$HOME/.dotfiles/rcrc rcup
+fancy_echo "Running rcup"
+rcup -v -x "README.md LICENSE Brewfile" -d $HOME/.laptop/dotfiles -d $HOME/.dotfiles
