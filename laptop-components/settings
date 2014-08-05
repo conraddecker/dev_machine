@@ -3,6 +3,7 @@
 #Set computer and hostnames
 sudo scutil --set ComputerName CDV-Air
 sudo scutil --set HostName CDV-Air.local
+sudo scutil --set LocalHostName CDV-Air
 
 #Require password immediately after screen saver or sleep
 defaults write com.apple.screensaver askForPassword -int 1
