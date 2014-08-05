@@ -1,1 +1,3 @@
 Plugin 'scrooloose/nerdtree'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'godlygeek/tabular'
