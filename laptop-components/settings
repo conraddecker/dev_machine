@@ -1,3 +1,5 @@
+#Worth checking out: http://blog.taylormcgann.com/2012/04/03/mac-os-x-user-defaults/
+
 #Set computer and hostnames
 sudo scutil --set ComputerName CDV-Air
 sudo scutil --set HostName CDV-Air.local
