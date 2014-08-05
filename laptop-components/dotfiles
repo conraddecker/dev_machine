@@ -4,4 +4,4 @@ env RCRC=$HOME/.dotfiles/rcrc
 rcup
 
 fancy_echo "Set up local customizations for dotfiles"
-cp ~/laptop/dotfiles/.* ~/
+cp -R ~/laptop/dotfiles/ ~/
