@@ -1,0 +1,11 @@
+nmap <S-N> :NERDTreeToggle \| :silent NERDTreeMirror<CR>
+nmap <C-N><C-N> :set invnumber<CR>
+
+nmap tt  :tabnew<CR>
+nmap tn  :tabnext<CR>
+nmap tp  :tabprevious<CR>
+nmap tf  :tabfirst<CR>
+nmap tl  :tablast<CR>
+nmap tc  :tabclose<CR>
+
+colorscheme desert
