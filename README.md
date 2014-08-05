@@ -4,9 +4,8 @@ laptop
 Place the following in ~/.laptop.local
 
 ```
-git clone https://github.com/conraddecker/laptop.git
-source ~/laptop/laptop.local
-rm -rf ~/laptop
+git clone https://github.com/conraddecker/laptop.git ~/.laptop
+source ~/.laptop/laptop.local
 ```
 
 Run the thoughtbot laptop script (https://github.com/thoughtbot/laptop)
