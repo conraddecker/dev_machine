@@ -36,8 +36,8 @@ brew_expand_alias() {
 }
 
 fancy_echo "Installing Brew Cask, to install OSX binaries ..."
-brew tap caskroom/cask                                                                                |~                                                                                                    
-brew_install_or_upgrade brew-cask  
+brew tap caskroom/cask
+brew_install_or_upgrade brew-cask
 
 brew_cask_list() {
   brew cask list 2> /dev/null || true
