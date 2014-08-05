@@ -2,7 +2,6 @@ fancy_echo "Setting up dotfiles..."
 git clone git://github.com/thoughtbot/dotfiles.git .dotfiles
 
 fancy_echo "Set up local customizations for dotfiles"
-cp -R ~/laptop/dotfiles/ ~/
+cp -R ~/.laptop/dotfiles/ ~/
 
-env RCRC=$HOME/.dotfiles/rcrc
-rcup
+env RCRC=$HOME/.dotfiles/rcrc rcup

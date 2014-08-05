@@ -1,5 +1,5 @@
-source ~/laptop/laptop-components/functions
-source ~/laptop/laptop-components/applications
-source ~/laptop/laptop-components/dotfiles
-source ~/laptop/laptop-components/oh-my-zsh
-source ~/laptop/laptop-components/settings
+source ~/.laptop/laptop-components/functions
+source ~/.laptop/laptop-components/applications
+source ~/.laptop/laptop-components/dotfiles
+source ~/.laptop/laptop-components/oh-my-zsh
+source ~/.laptop/laptop-components/settings
