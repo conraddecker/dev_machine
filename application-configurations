@@ -1,0 +1,116 @@
+Dropbox (configure first, it will take a while to download)
+  - All defaults
+  - Login
+  - Configure Dropbox folder in home directory
+  - Symlink appropriate folders in home directory
+  - General
+    - Make menu bar icon black and white
+  - Import
+    - Enable camera uploads for Photos and videos
+    - Enable screenshots using Dropbox
+
+Chrome
+  - Set as default browser
+  - Login
+
+Dock
+  - Remove everything
+    - Mail
+    - Contacts
+    - Calendar
+    - Maps
+    - Facetime
+    - Photo Booth
+    - AppStore
+    - iBooks
+    - iTunes
+    - iMessage
+    - Notes
+    - Downloads
+    - Safari
+  - Only leave running applications
+
+Firefox
+  - Don't import anything
+  - Don't set as default
+  - We're primarily using this for testing purposes
+
+Flux
+  - Allow to use location
+  - Accept defaults
+
+Hall
+  - Login
+
+iCloud
+  - Disable all iCloud services with the exception of FindMyMac
+
+Internet Accounts
+  - Add Gmail account for syncing calenders, contacts and notes
+  - Add conrad.decker@gmail.com account for:
+    - Contacts, Calendars and Notes
+  - Add conrad@cdevtech.comm account for: 
+    - Contacts and Calendars
+
+Menu Meters
+  - Display CPU Menu Meter
+    - As Graph
+  - Update interval: 1.0 seconds
+  - Graph Width: 4 out of 8
+  - Colors
+    User: #666666
+    System: #000000
+
+  - Display Memory Menu meter
+    - As Used/Free totals
+  - Update interval: 10 seconds
+  - Colors
+    Free: #009900
+    Used: #660000
+
+  - Arrange
+    - Memory far left
+    - CPU to it's right
+
+Pandora
+  - Accept terms
+  - Login
+
+SelfControl
+  - Nothing to do
+
+SizeUp
+  - License SizeUp using purchased license in email
+
+Bartender (configure last to have access to all running apps)
+  - License Bartender using purchased license in email
+  - SizeUp - show in bartender - show item updates
+  - Dropbox - show in bartender - show item updates
+  - Flux - show in bartender - show item updates
+  - Time Machine - show in bartender - show item updates
+  - Bluetooth - show in bartender - show item updates
+  - Wifi - leave in menu bar
+  - Spotlight - completely hide menu bar item - don't show item updates
+  - Rearrange
+    - Move bartender to the right of the clock
+  - Set bartender icon to Bartender
+  - General preferences
+    - Launch bartender at login
+    - Autohide
+    - Show icon highlight when bartender is open
+    - Check for updates
+
+Time Machine
+  
+
+Keyboard Shortcuts
+  - Launchpad?
+  - Mission Control?
+
+More mac settings
+  - General
+    - Appearance: Graphite
+    - Highlight color: Graphite
+  - Don't show volume in menu bar
+  - Battery display settings: show percentage
+  - Change avatar
