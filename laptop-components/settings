@@ -28,17 +28,15 @@ defaults -currentHost write -g com.apple.trackpad.threeFingerDragGesture -bool t
 less_fancy_echo "...disabling 'Scroll direction: natural'..."
 defaults write -g com.apple.swipescrolldirection -bool false
 
+less_fancy_echo "...enabling 'Secondary click: click on the right side' for mouse..."
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+
+less_fancy_echo "...enabling 'SmartZoom Double-tap with one finger' for mouse"
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture -bool true
+
+less_fancy_echo "...enabling 'Swipe between pages' for mouse"
+defaults write -g AppleEnableMouseSwipeNavigateWithScrolls -int 1
+
 less_fancy_echo "...setting default terminal profile to 'Pro'..."
 defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
-
-#Mouse settings if we want to adjust them as well (we probably should)
-#fancy_echo "Be sure to update the following settings manually for ultimate happiness"
-#fancy_echo "MOUSE"
-#less_fancy_echo "...disable 'Scroll direction: natural' under POINT & CLICK settings"
-#less_fancy_echo "...enable 'Secondary click: click on the right side' under POINT & CLICK settings"
-#less_fancy_echo "...enable 'SmartZoom Double-tap with one finger' under POINT & CLICK settings"
-#less_fancy_echo "...set 'Tracking Speed' to 3 out of 10 under POINT & CLICK settings"
-#less_fancy_echo "...enable 'Swipe between pages' under MORE GESTURES settings"
-#less_fancy_echo "...enable 'Swipe between full-screen apps' under MORE GESTURES settings"
-#less_fancy_echo "...enable 'Mission control: double-tap with two fingers' under MORE GESTURES settings"
