@@ -42,9 +42,3 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
 #less_fancy_echo "...enable 'Swipe between pages' under MORE GESTURES settings"
 #less_fancy_echo "...enable 'Swipe between full-screen apps' under MORE GESTURES settings"
 #less_fancy_echo "...enable 'Mission control: double-tap with two fingers' under MORE GESTURES settings"
-
-#Additional things you'll probably want to do.
-#Clean out the dock
-#Change your avatar
-#Configure all of the applications have been installed
-#Symlink personal folders to Dropbox
