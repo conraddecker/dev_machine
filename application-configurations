@@ -81,6 +81,7 @@ SelfControl
 
 SizeUp
   - License SizeUp using purchased license in email
+  - Set to launch on startup
 
 Bartender (configure last to have access to all running apps)
   - License Bartender using purchased license in email
