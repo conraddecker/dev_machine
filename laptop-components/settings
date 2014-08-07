@@ -21,11 +21,18 @@ killall Dock
 
 less_fancy_echo "...enabling 'Tap-to-click' for trackpad..."
 defaults -currentHost write -g com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write -g com.apple.mouse.tapBehavior -int 1
+
+less_fancy_echo "...enabling 'Tap and Drag' for trackpad..."
+defaults -currentHost write -g com.apple.mouse.tapBehavior -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool true
+defaults write com.apple.AppleMultitouchTrackpad Dragging -bool true
 
 less_fancy_echo "...enabling 'Three Finger Drag' for trackpad..."
 defaults -currentHost write -g com.apple.trackpad.threeFingerDragGesture -bool true
 
-less_fancy_echo "...disabling 'Scroll direction: natural'..."
+less_fancy_echo "...disabling Scroll direction: natural'..."
 defaults write -g com.apple.swipescrolldirection -bool false
 
 less_fancy_echo "...enabling 'Secondary click: click on the right side' for mouse..."
