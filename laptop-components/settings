@@ -19,6 +19,12 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock tilesize -int 48
 killall Dock
 
+less_fancy_echo "...showing 'Library' folder in home directory..."
+chflags nohidden ~/Library
+
+less_fancy_echo "...telling Finder to open at home directory..."
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+
 less_fancy_echo "...enabling 'Tap-to-click' for trackpad..."
 defaults -currentHost write -g com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
