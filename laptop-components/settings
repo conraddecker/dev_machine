@@ -50,6 +50,10 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDou
 less_fancy_echo "...enabling 'Swipe between pages' for mouse"
 defaults write -g AppleEnableMouseSwipeNavigateWithScrolls -int 1
 
+less_fancy_echo "...enabling 'select and copy text' in preview window"
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+killall Finder
+
 less_fancy_echo "...setting default terminal profile to 'Pro'..."
 defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
