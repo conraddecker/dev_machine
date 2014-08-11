@@ -1,3 +1,6 @@
+fancy_echo "Installing ngrok for local tunneling..."
+brew install ngrok
+
 fancy_echo "Installing Adobe Air..."
 brew_cask_install adobe-air
 
