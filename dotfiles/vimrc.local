@@ -8,4 +8,8 @@ nmap tf  :tabfirst<CR>
 nmap tl  :tablast<CR>
 nmap tc  :tabclose<CR>
 
+set textwidth=0
+
+au BufNewFile,BufRead *.hamljs set filetype=haml
+
 colorscheme desert
