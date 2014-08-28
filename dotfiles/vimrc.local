@@ -11,5 +11,7 @@ nmap tc  :tabclose<CR>
 set textwidth=0
 
 au BufNewFile,BufRead *.hamljs set filetype=haml
+autocmd Syntax * syn match htmlArg contained "\s*v-[-a-zA-Z0-9_]\+"
+autocmd Syntax * syn match htmlArg contained "\s*data-[-a-zA-Z0-9_]\+"
 
 colorscheme desert
