@@ -4,8 +4,14 @@ brew install ngrok
 fancy_echo "Installing Adobe Air..."
 brew_cask_install adobe-air
 
+fancy_echo "Installing Adium for IM..."
+brew cask install adium
+
 fancy_echo "Installing Bartender to keep that menu bar clean..."
 brew_cask_install bartender
+
+fancy_echo "Installing ChefDK"
+brew_cask_install chefdk
 
 fancy_echo "Installing Dropbox for some cloud storage..."
 brew_cask_install dropbox
