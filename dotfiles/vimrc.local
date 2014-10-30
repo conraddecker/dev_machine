@@ -1,3 +1,4 @@
+let NERDTreeHijackNetrw=1
 nmap <S-N> :NERDTreeToggle \| :silent NERDTreeMirror<CR>
 nmap <C-N><C-N> :set invnumber<CR>
 
