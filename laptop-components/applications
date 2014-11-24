@@ -25,8 +25,8 @@ brew_cask_install flux
 fancy_echo "Installing Google Chrome for web browsing..."
 brew_cask_install google-chrome
 
-fancy_echo "Installing Hall for communication..."
-brew_cask_install hall
+fancy_echo "Installing Slack for communication..."
+brew_cask_install slack
 
 fancy_echo "Installing Menu Meters for at a glance info on processors..."
 brew_cask_install menumeters
