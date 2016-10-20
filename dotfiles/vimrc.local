@@ -27,3 +27,6 @@ autocmd FilterWritePre  * :call TrimWhiteSpace()
 autocmd BufWritePre     * :call TrimWhiteSpace()
 
 colorscheme desert
+
+nmap <leader>h :%!html2haml --erb --html-attributes 2> /dev/null<CR>:set ft=haml<CR>
+vmap <leader>h :!html2haml --erb --html-attributes 2> /dev/null<CR>
