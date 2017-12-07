@@ -3,6 +3,8 @@ if [ -e ~/.rvm/bin/rvm-prompt ]; then
 else
   if which rbenv &> /dev/null; then
     local ruby_version="%{$fg[yellow]%}|ruby-\$(rbenv version | sed -e 's/ (set.*$//')|%{$reset_color%}"
+  else
+    local ruby_version="%{$fg[yellow]%}|ruby-\$(asdf current ruby| sed -e 's/ (set.*$//')|%{$reset_color%}"
   fi
 fi
 
@@ -25,5 +27,5 @@ local arrow="%{$fg[green]%}→%{$reset_color%}"
 
 # Put it all together!
 PROMPT="
-$ruby_version $hostname in $pwd 
+$ruby_version $hostname in $pwd
 $line_starter \$(git_prompt_info) $arrow "
