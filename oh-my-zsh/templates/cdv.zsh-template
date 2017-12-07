@@ -92,3 +92,9 @@ bindkey "^R" none
 bindkey "^P" none
 bindkey "^Y" none
 bindkey "^N" none
+
+export PATH="$HOME/.bin:$PATH"
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"
+source /Users/conrad/.asdf/asdf.sh
