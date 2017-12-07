@@ -1,17 +1,11 @@
 fancy_echo "Installing ngrok for local tunneling..."
-brew install ngrok
-
-fancy_echo "Installing Adobe Air..."
-brew_cask_install adobe-air
-
-fancy_echo "Installing Adium for IM..."
-brew cask install adium
+brew_cask_install ngrok
 
 fancy_echo "Installing Bartender to keep that menu bar clean..."
 brew_cask_install bartender
 
-fancy_echo "Installing ChefDK"
-brew_cask_install chefdk
+fancy_echo "Installing Docker for docker..."
+brew_cask_install dropbox
 
 fancy_echo "Installing Dropbox for some cloud storage..."
 brew_cask_install dropbox
@@ -19,20 +13,11 @@ brew_cask_install dropbox
 fancy_echo "Installing Firefox for web browsing..."
 brew_cask_install firefox
 
-fancy_echo "Installing F-lux, to save your eyes ..."
-brew_cask_install flux
-
 fancy_echo "Installing Google Chrome for web browsing..."
 brew_cask_install google-chrome
 
 fancy_echo "Installing Slack for communication..."
 brew_cask_install slack
-
-fancy_echo "Installing Menu Meters for at a glance info on processors..."
-brew_cask_install menumeters
-
-fancy_echo "Installing Pandora for music..."
-brew_cask_install pandora-one
 
 fancy_echo "Installing SizeUp for quick window resizing..."
 brew_cask_install sizeup
