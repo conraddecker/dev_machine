@@ -1,3 +1,3 @@
-Plugin 'scrooloose/nerdtree'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'godlygeek/tabular'
+Plug 'scrooloose/nerdtree'
+Plug 'flazz/vim-colorschemes'
+Plug 'godlygeek/tabular'
