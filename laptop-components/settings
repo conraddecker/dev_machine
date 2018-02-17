@@ -1,9 +1,9 @@
 fancy_echo "Updating Mac OSX settings..."
 
 less_fancy_echo "...setting computer and hostnames..."
-sudo scutil --set ComputerName CDV-Air
-sudo scutil --set HostName CDV-Air.local
-sudo scutil --set LocalHostName CDV-Air
+sudo scutil --set ComputerName cdv
+sudo scutil --set HostName cdv
+sudo scutil --set LocalHostName cdv
 
 less_fancy_echo "...requiring password immediately after screen saver or sleep..."
 defaults write com.apple.screensaver askForPassword -int 1

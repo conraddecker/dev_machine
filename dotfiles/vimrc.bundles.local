@@ -1,3 +1,4 @@
 Plug 'scrooloose/nerdtree'
 Plug 'flazz/vim-colorschemes'
 Plug 'godlygeek/tabular'
+Plug 'posva/vim-vue'
