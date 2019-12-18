@@ -53,10 +53,3 @@ asdf plugin-add nodejs
 ## Install nodejs latest
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf install nodejs latest
-
-
-## Install firebase tools
-npm install -g firebase-tools
-
-
-
