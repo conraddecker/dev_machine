@@ -13,6 +13,9 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[green]%}|"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg_bold[green]%}o%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg_bold[red]%}x%{$reset_color%}"
 
+# Grab username
+local username="%{$FG[013]%}%n%{$reset_color%}"
+
 # Grab hostname
 local hostname="%{$FG[013]%}%m%{$reset_color%}"
 
