@@ -24,19 +24,22 @@ git clone git://github.com/conraddecker/laptop.git $HOME/.dev_machine
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.6
 
-## Install zsh, rcm, docker
-sudo apt install -y zsh rcm docker-ce
-
-## Run rcup
-rcup -x "README*.md LICENSE" -d $HOME/.dev_machine/dotfiles -d $HOME/.dotfiles
+## Install zsh, rcm, docker, postgresql
+sudo apt install -y zsh rcm docker-ce postgresql postgresql-contrib
 
 ## Apply oh-my-zsh customizations and change shell accordingly
 ln -s $HOME/.dev_machine/oh-my-zsh/custom/themes/cdv.zsh-theme $HOME/.oh-my-zsh/custom/themes/
 sudo sed -i 's;/home/ubuntu:/bin/bash;/home/ubuntu:/usr/bin/zsh;' /etc/passwd
 rm .bash_history .bash_logout .bashrc
 
+## Run rcup
+rcup -x "README*.md LICENSE" -d $HOME/.dev_machine/dotfiles -d $HOME/.dotfiles
+
 ## Configure docker
 sudo usermod -aG docker ${USER}
+
+## Setup postgres
+sudo -u postgres createuser -s ubuntu
 
 ## Install Heroku
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
