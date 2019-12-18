@@ -1,12 +1,12 @@
-if [ -e ~/.rvm/bin/rvm-prompt ]; then
-  local ruby_version="|%{$fg[yellow]%}|\$(~/.rvm/bin/rvm-prompt i v)|%{$reset_color%}"
-else
-  if which rbenv &> /dev/null; then
-    local ruby_version="%{$fg[yellow]%}|ruby-\$(rbenv version | sed -e 's/ (set.*$//')|%{$reset_color%}"
-  else
-    local ruby_version="%{$fg[yellow]%}|ruby-\$(asdf current ruby| sed -e 's/ (set.*$//')|%{$reset_color%}"
-  fi
-fi
+#if [ -e ~/.rvm/bin/rvm-prompt ]; then
+#  local ruby_version="|%{$fg[yellow]%}|\$(~/.rvm/bin/rvm-prompt i v)|%{$reset_color%}"
+#else
+#  if which rbenv &> /dev/null; then
+#    local ruby_version="%{$fg[yellow]%}|ruby-\$(rbenv version | sed -e 's/ (set.*$//')|%{$reset_color%}"
+#  else
+#    local ruby_version="%{$fg[yellow]%}|ruby-\$(asdf current ruby| sed -e 's/ (set.*$//')|%{$reset_color%}"
+#  fi
+#fi
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}|"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[green]%}|"
@@ -26,6 +26,10 @@ local line_starter="%{$fg_bold[cyan]%}±%{$reset_color%}"
 local arrow="%{$fg[green]%}→%{$reset_color%}"
 
 # Put it all together!
+#PROMPT="
+#$ruby_version $hostname in $pwd
+#$line_starter \$(git_prompt_info) $arrow "
+
 PROMPT="
-$ruby_version $hostname in $pwd
+$hostname in $pwd
 $line_starter \$(git_prompt_info) $arrow "
