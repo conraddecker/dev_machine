@@ -45,11 +45,13 @@ sudo -u postgres createuser -s ubuntu
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 ## Configure asdf
-echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.zshrc
-echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc
+cat <<EOT >> ~/.zshrc
+$HOME/.asdf/asdf.sh
+$HOME/.asdf/completions/asdf.bash
+EOT
 
 ## Install ruby and node plugins
-source $HOME/.asdf/asdf.sh
+#source $HOME/.asdf/asdf.sh
 asdf plugin-add ruby
 asdf plugin-add nodejs
 
