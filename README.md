@@ -9,7 +9,7 @@ Install
 Download the script:
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/conraddecker/laptop/master/setup
+curl --remote-name https://raw.githubusercontent.com/conraddecker/dev_machine/master/setup
 ```
 
 Review the script (avoid running scripts you haven't read!):
