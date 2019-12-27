@@ -52,6 +52,7 @@ EOT
 
 ## Install ruby and node plugins
 #source $HOME/.asdf/asdf.sh
+source ~/.zshrc
 asdf plugin-add ruby
 asdf plugin-add nodejs
 
