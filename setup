@@ -46,13 +46,13 @@ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 ## Configure asdf
 cat <<EOT >> ~/.zshrc
-$HOME/.asdf/asdf.sh
-$HOME/.asdf/completions/asdf.bash
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 EOT
 
 ## Install ruby and node plugins
 #source $HOME/.asdf/asdf.sh
-source ~/.zshrc
+. $HOME/.zshrc
 asdf plugin-add ruby
 asdf plugin-add nodejs
 
