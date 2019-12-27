@@ -51,11 +51,8 @@ cat <<EOT >> ~/.zshrc
 EOT
 
 ## Install ruby and node plugins
-#source $HOME/.asdf/asdf.sh
-#. $HOME/.zshrc
-zsh
-asdf plugin-add ruby
-asdf plugin-add nodejs
+#asdf plugin-add ruby
+#asdf plugin-add nodejs
 
 ## Install ruby latest
 # asdf install ruby latest
