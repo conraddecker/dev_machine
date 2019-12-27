@@ -24,8 +24,8 @@ git clone git://github.com/conraddecker/laptop.git $HOME/.dev_machine
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.6
 
-## Install zsh, rcm, docker, postgresql
-sudo apt install -y zsh rcm docker-ce postgresql postgresql-contrib
+## Install awscli, docker, postgres, rcm and zsh
+sudo apt install -y awscli docker-ce postgresql postgresql-contrib rcm zsh
 
 ## Apply oh-my-zsh customizations and change shell accordingly
 ln -s $HOME/.dev_machine/oh-my-zsh/custom/themes/cdv.zsh-theme $HOME/.oh-my-zsh/custom/themes/
