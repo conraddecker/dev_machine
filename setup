@@ -7,7 +7,7 @@ sudo apt install -y \
   automake autoconf libreadline-dev \
   libncurses-dev libssl-dev libyaml-dev \
   libxslt-dev libffi-dev libtool unixodbc-dev \
-  unzip curl openssl libssl1.0-dev \
+  unzip curl openssl libssl-dev zlib1g-dev \
   apt-transport-https ca-certificates curl software-properties-common
 
 wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
