@@ -4,7 +4,7 @@
 sudo apt upgrade -y
 
 sudo apt install -y \
-  automake autoconf libreadline-dev \
+  automake autoconf libreadline-dev libpq-dev \
   libncurses-dev libssl-dev libyaml-dev \
   libxslt-dev libffi-dev libtool unixodbc-dev \
   unzip curl openssl libssl-dev zlib1g-dev \
